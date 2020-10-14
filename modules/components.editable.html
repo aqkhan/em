@@ -70,6 +70,7 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/components.editable.alert.html" class="tsd-kind-icon">Alert</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/components.editable.editableprops.html" class="tsd-kind-icon">Editable<wbr>Props</a></li>
 							</ul>
 						</section>
@@ -77,13 +78,18 @@
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="components.editable.html#empty_thought_timeout" class="tsd-kind-icon">EMPTY_<wbr>THOUGHT_<wbr>TIMEOUT</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="components.editable.html#showduplicationalert" class="tsd-kind-icon">show<wbr>Duplication<wbr>Alert</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.editable.html#editable" class="tsd-kind-icon">Editable</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.editable.html#duplicatealerttoggler" class="tsd-kind-icon">duplicate<wbr>Alert<wbr>Toggler</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.editable.html#maketoolbarpositionfixed" class="tsd-kind-icon">make<wbr>Toolbar<wbr>Position<wbr>Fixed</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.editable.html#resettoolbarposition" class="tsd-kind-icon">reset<wbr>Toolbar<wbr>Position</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.editable.html#stoppropagation" class="tsd-kind-icon">stop<wbr>Propagation</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.editable.html#updatetoolbarpositiononscroll" class="tsd-kind-icon">update<wbr>Toolbar<wbr>Position<wbr>OnScroll</a></li>
 							</ul>
 						</section>
 					</div>
@@ -97,7 +103,17 @@
 					<div class="tsd-signature tsd-kind-icon">EMPTY_<wbr>THOUGHT_<wbr>TIMEOUT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 5 * 1000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/aqkhan/em/blob/0f83648/src/components/Editable.tsx#L65">src/components/Editable.tsx:65</a></li>
+							<li>Defined in <a href="https://github.com/aqkhan/em/blob/54e2a7f/src/components/Editable.tsx#L66">src/components/Editable.tsx:66</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="showduplicationalert" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> show<wbr>Duplication<wbr>Alert</h3>
+					<div class="tsd-signature tsd-kind-icon">show<wbr>Duplication<wbr>Alert<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> = duplicateAlertToggler()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/aqkhan/em/blob/54e2a7f/src/components/Editable.tsx#L149">src/components/Editable.tsx:149</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -114,7 +130,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/aqkhan/em/blob/0f83648/src/components/Editable.tsx#L86">src/components/Editable.tsx:86</a></li>
+									<li>Defined in <a href="https://github.com/aqkhan/em/blob/54e2a7f/src/components/Editable.tsx#L155">src/components/Editable.tsx:155</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -166,6 +182,72 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="duplicatealerttoggler" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> duplicate<wbr>Alert<wbr>Toggler</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">duplicate<wbr>Alert<wbr>Toggler<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/aqkhan/em/blob/54e2a7f/src/components/Editable.tsx#L125">src/components/Editable.tsx:125</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Toggle duplication alert. Use closure for storing timeoutId in order to cancel dispatching alert if it&#39;s necessary.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="maketoolbarpositionfixed" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> make<wbr>Toolbar<wbr>Position<wbr>Fixed</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">make<wbr>Toolbar<wbr>Position<wbr>Fixed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/aqkhan/em/blob/54e2a7f/src/components/Editable.tsx#L72">src/components/Editable.tsx:72</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Add position:absolute to toolbar elements in order to fix Safari position:fixed browser behavior when keyboard is up.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="resettoolbarposition" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> reset<wbr>Toolbar<wbr>Position</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">reset<wbr>Toolbar<wbr>Position<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/aqkhan/em/blob/54e2a7f/src/components/Editable.tsx#L86">src/components/Editable.tsx:86</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Reset position:absolute of toolbar elements.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 					<a name="stoppropagation" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> stop<wbr>Propagation</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
@@ -175,7 +257,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/aqkhan/em/blob/0f83648/src/components/Editable.tsx#L68">src/components/Editable.tsx:68</a></li>
+									<li>Defined in <a href="https://github.com/aqkhan/em/blob/54e2a7f/src/components/Editable.tsx#L69">src/components/Editable.tsx:69</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -184,6 +266,28 @@
 									<h5>e: <span class="tsd-signature-type">MouseEvent</span></h5>
 								</li>
 							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="updatetoolbarpositiononscroll" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> update<wbr>Toolbar<wbr>Position<wbr>OnScroll</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Toolbar<wbr>Position<wbr>OnScroll<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/aqkhan/em/blob/54e2a7f/src/components/Editable.tsx#L98">src/components/Editable.tsx:98</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Update position of toolbar elements while scrolling in order to show them always on top.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -206,16 +310,34 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/components.editable.alert.html" class="tsd-kind-icon">Alert</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../interfaces/components.editable.editableprops.html" class="tsd-kind-icon">Editable<wbr>Props</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="components.editable.html#empty_thought_timeout" class="tsd-kind-icon">EMPTY_<wbr>THOUGHT_<wbr>TIMEOUT</a>
 					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="components.editable.html#showduplicationalert" class="tsd-kind-icon">show<wbr>Duplication<wbr>Alert</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="components.editable.html#editable" class="tsd-kind-icon">Editable</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="components.editable.html#duplicatealerttoggler" class="tsd-kind-icon">duplicate<wbr>Alert<wbr>Toggler</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="components.editable.html#maketoolbarpositionfixed" class="tsd-kind-icon">make<wbr>Toolbar<wbr>Position<wbr>Fixed</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="components.editable.html#resettoolbarposition" class="tsd-kind-icon">reset<wbr>Toolbar<wbr>Position</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="components.editable.html#stoppropagation" class="tsd-kind-icon">stop<wbr>Propagation</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="components.editable.html#updatetoolbarpositiononscroll" class="tsd-kind-icon">update<wbr>Toolbar<wbr>Position<wbr>OnScroll</a>
 					</li>
 				</ul>
 			</nav>

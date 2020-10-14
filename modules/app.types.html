@@ -71,11 +71,13 @@
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/app.types.child.html" class="tsd-kind-icon">Child</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/app.types.extendedoperation.html" class="tsd-kind-icon">Extended<wbr>Operation</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/app.types.icon.html" class="tsd-kind-icon">Icon</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/app.types.key.html" class="tsd-kind-icon">Key</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/app.types.lexeme.html" class="tsd-kind-icon">Lexeme</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/app.types.log.html" class="tsd-kind-icon">Log</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/app.types.parent.html" class="tsd-kind-icon">Parent</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/app.types.parententry.html" class="tsd-kind-icon">Parent<wbr>Entry</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/app.types.shortcut.html" class="tsd-kind-icon">Shortcut</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/app.types.thoughtcontext.html" class="tsd-kind-icon">Thought<wbr>Context</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/app.types.window.html" class="tsd-kind-icon">Window</a></li>
 							</ul>
@@ -84,8 +86,13 @@
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="app.types.html#actioncreator" class="tsd-kind-icon">Action<wbr>Creator</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="app.types.html#alert" class="tsd-kind-icon">Alert</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter"><a href="app.types.html#connected" class="tsd-kind-icon">Connected</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="app.types.html#context" class="tsd-kind-icon">Context</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="app.types.html#direction" class="tsd-kind-icon">Direction</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter"><a href="app.types.html#directionmap" class="tsd-kind-icon">Direction<wbr>Map</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="app.types.html#gesturepath" class="tsd-kind-icon">Gesture<wbr>Path</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="app.types.html#patch" class="tsd-kind-icon">Patch</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="app.types.html#path" class="tsd-kind-icon">Path</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="app.types.html#timestamp" class="tsd-kind-icon">Timestamp</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="app.types.html#tutorialchoice" class="tsd-kind-icon">Tutorial<wbr>Choice</a></li>
@@ -102,7 +109,7 @@
 					<div class="tsd-signature tsd-kind-icon">Action<wbr>Creator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ThunkAction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Action</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/aqkhan/em/blob/0f83648/src/types.ts#L62">src/types.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/aqkhan/em/blob/54e2a7f/src/types.ts#L59">src/types.ts:59</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -111,13 +118,23 @@
 						</div>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="alert" class="tsd-anchor"></a>
+					<h3>Alert</h3>
+					<div class="tsd-signature tsd-kind-icon">Alert<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>alertType<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>showCloseLink<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/aqkhan/em/blob/54e2a7f/src/types.ts#L119">src/types.ts:119</a></li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
 					<a name="connected" class="tsd-anchor"></a>
 					<h3>Connected</h3>
 					<div class="tsd-signature tsd-kind-icon">Connected&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>dispatch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/aqkhan/em/blob/0f83648/src/types.ts#L68">src/types.ts:68</a></li>
+							<li>Defined in <a href="https://github.com/aqkhan/em/blob/54e2a7f/src/types.ts#L65">src/types.ts:65</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -138,7 +155,7 @@
 					<div class="tsd-signature tsd-kind-icon">Context<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/aqkhan/em/blob/0f83648/src/types.ts#L53">src/types.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/aqkhan/em/blob/54e2a7f/src/types.ts#L49">src/types.ts:49</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -148,12 +165,79 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="direction" class="tsd-anchor"></a>
+					<h3>Direction</h3>
+					<div class="tsd-signature tsd-kind-icon">Direction<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"u"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"d"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"l"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"r"</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/aqkhan/em/blob/54e2a7f/src/types.ts#L109">src/types.ts:109</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="directionmap" class="tsd-anchor"></a>
+					<h3>Direction<wbr>Map</h3>
+					<div class="tsd-signature tsd-kind-icon">Direction<wbr>Map&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>dir<span class="tsd-signature-symbol">: </span><a href="app.types.html#direction" class="tsd-signature-type">Direction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/aqkhan/em/blob/54e2a7f/src/types.ts#L111">src/types.ts:111</a></li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>T</h4>
+						</li>
+					</ul>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>dir<span class="tsd-signature-symbol">: </span><a href="app.types.html#direction" class="tsd-signature-type">Direction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>dir: <a href="app.types.html#direction" class="tsd-signature-type">Direction</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="gesturepath" class="tsd-anchor"></a>
+					<h3>Gesture<wbr>Path</h3>
+					<div class="tsd-signature tsd-kind-icon">Gesture<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">"u"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"d"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"l"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"r"</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>map<span class="tsd-signature-symbol">: </span><a href="app.types.html#directionmap" class="tsd-signature-type">DirectionMap</a><span class="tsd-signature-symbol">&lt;</span><a href="app.types.html#direction" class="tsd-signature-type">Direction</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>split<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="app.types.html#direction" class="tsd-signature-type">Direction</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/aqkhan/em/blob/54e2a7f/src/types.ts#L114">src/types.ts:114</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="patch" class="tsd-anchor"></a>
+					<h3>Patch</h3>
+					<div class="tsd-signature tsd-kind-icon">Patch<span class="tsd-signature-symbol">:</span> <a href="../interfaces/app.types.extendedoperation.html" class="tsd-signature-type">ExtendedOperation</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/aqkhan/em/blob/54e2a7f/src/types.ts#L131">src/types.ts:131</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
 					<a name="path" class="tsd-anchor"></a>
 					<h3>Path</h3>
 					<div class="tsd-signature tsd-kind-icon">Path<span class="tsd-signature-symbol">:</span> <a href="../interfaces/app.types.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/aqkhan/em/blob/0f83648/src/types.ts#L50">src/types.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/aqkhan/em/blob/54e2a7f/src/types.ts#L46">src/types.ts:46</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -168,7 +252,7 @@
 					<div class="tsd-signature tsd-kind-icon">Timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/aqkhan/em/blob/0f83648/src/types.ts#L14">src/types.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/aqkhan/em/blob/54e2a7f/src/types.ts#L16">src/types.ts:16</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -183,7 +267,7 @@
 					<div class="tsd-signature tsd-kind-icon">Tutorial<wbr>Choice<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">0</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">2</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/aqkhan/em/blob/0f83648/src/types.ts#L65">src/types.ts:65</a></li>
+							<li>Defined in <a href="https://github.com/aqkhan/em/blob/54e2a7f/src/types.ts#L62">src/types.ts:62</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -251,6 +335,9 @@
 						<a href="reducers.html">reducers</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="redux_enhancers.html">redux-<wbr>enhancers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="redux_middleware.html">redux-<wbr>middleware</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
@@ -272,8 +359,14 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/app.types.child.html" class="tsd-kind-icon">Child</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/app.types.extendedoperation.html" class="tsd-kind-icon">Extended<wbr>Operation</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/app.types.icon.html" class="tsd-kind-icon">Icon</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/app.types.key.html" class="tsd-kind-icon">Key</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/app.types.lexeme.html" class="tsd-kind-icon">Lexeme</a>
@@ -285,7 +378,7 @@
 						<a href="../interfaces/app.types.parent.html" class="tsd-kind-icon">Parent</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/app.types.parententry.html" class="tsd-kind-icon">Parent<wbr>Entry</a>
+						<a href="../interfaces/app.types.shortcut.html" class="tsd-kind-icon">Shortcut</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/app.types.thoughtcontext.html" class="tsd-kind-icon">Thought<wbr>Context</a>
@@ -296,11 +389,26 @@
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="app.types.html#actioncreator" class="tsd-kind-icon">Action<wbr>Creator</a>
 					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="app.types.html#alert" class="tsd-kind-icon">Alert</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="app.types.html#connected" class="tsd-kind-icon">Connected</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="app.types.html#context" class="tsd-kind-icon">Context</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="app.types.html#direction" class="tsd-kind-icon">Direction</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="app.types.html#directionmap" class="tsd-kind-icon">Direction<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="app.types.html#gesturepath" class="tsd-kind-icon">Gesture<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="app.types.html#patch" class="tsd-kind-icon">Patch</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="app.types.html#path" class="tsd-kind-icon">Path</a>

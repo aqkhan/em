@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ParentEntry | em</title>
+	<title>ExtendedOperation | em</title>
 	<meta name="description" content="Documentation for em">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,63 +57,86 @@
 					<a href="../modules/app.types.html">types</a>
 				</li>
 				<li>
-					<a href="app.types.parententry.html">ParentEntry</a>
+					<a href="app.types.extendedoperation.html">ExtendedOperation</a>
 				</li>
 			</ul>
-			<h1>Interface ParentEntry</h1>
+			<h1>Interface ExtendedOperation</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>An object that contains a list of children within a context.</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ParentEntry</span>
+						<span class="tsd-signature-type">GetOperation</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">ExtendedOperation</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="app.types.parententry.html#children" class="tsd-kind-icon">children</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="app.types.parententry.html#lastupdated" class="tsd-kind-icon">last<wbr>Updated</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="app.types.extendedoperation.html#actions" class="tsd-kind-icon">actions</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="app.types.extendedoperation.html#op" class="tsd-kind-icon">op</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="app.types.extendedoperation.html#path" class="tsd-kind-icon">path</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="app.types.extendedoperation.html#value" class="tsd-kind-icon">value</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="children" class="tsd-anchor"></a>
-					<h3>children</h3>
-					<div class="tsd-signature tsd-kind-icon">children<span class="tsd-signature-symbol">:</span> <a href="app.types.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="actions" class="tsd-anchor"></a>
+					<h3>actions</h3>
+					<div class="tsd-signature tsd-kind-icon">actions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/aqkhan/em/blob/0f83648/src/types.ts#L57">src/types.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/aqkhan/em/blob/54e2a7f/src/types.ts#L128">src/types.ts:128</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="lastupdated" class="tsd-anchor"></a>
-					<h3>last<wbr>Updated</h3>
-					<div class="tsd-signature tsd-kind-icon">last<wbr>Updated<span class="tsd-signature-symbol">:</span> <a href="../modules/app.types.html#timestamp" class="tsd-signature-type">Timestamp</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="op" class="tsd-anchor"></a>
+					<h3>op</h3>
+					<div class="tsd-signature tsd-kind-icon">op<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"_get"</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="app.types.extendedoperation.html">ExtendedOperation</a>.<a href="app.types.extendedoperation.html#op">op</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/aqkhan/em/blob/0f83648/src/types.ts#L58">src/types.ts:58</a></li>
+							<li>Defined in node_modules/fast-json-patch/module/core.d.ts:40</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="path" class="tsd-anchor"></a>
+					<h3>path</h3>
+					<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="app.types.extendedoperation.html">ExtendedOperation</a>.<a href="app.types.extendedoperation.html#path">path</a></p>
+						<ul>
+							<li>Defined in node_modules/fast-json-patch/module/core.d.ts:14</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="value" class="tsd-anchor"></a>
+					<h3>value</h3>
+					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="app.types.extendedoperation.html">ExtendedOperation</a>.<a href="app.types.extendedoperation.html#value">value</a></p>
+						<ul>
+							<li>Defined in node_modules/fast-json-patch/module/core.d.ts:41</li>
 						</ul>
 					</aside>
 				</section>
@@ -176,6 +199,9 @@
 						<a href="../modules/reducers.html">reducers</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="../modules/redux_enhancers.html">redux-<wbr>enhancers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/redux_middleware.html">redux-<wbr>middleware</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
@@ -197,8 +223,32 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="app.types.child.html" class="tsd-kind-icon">Child</a>
 					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="app.types.extendedoperation.html" class="tsd-kind-icon">Extended<wbr>Operation</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="app.types.extendedoperation.html#actions" class="tsd-kind-icon">actions</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="app.types.extendedoperation.html#op" class="tsd-kind-icon">op</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="app.types.extendedoperation.html#path" class="tsd-kind-icon">path</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="app.types.extendedoperation.html#value" class="tsd-kind-icon">value</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="app.types.icon.html" class="tsd-kind-icon">Icon</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="app.types.key.html" class="tsd-kind-icon">Key</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="app.types.lexeme.html" class="tsd-kind-icon">Lexeme</a>
@@ -209,21 +259,9 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="app.types.parent.html" class="tsd-kind-icon">Parent</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="app.types.parententry.html" class="tsd-kind-icon">Parent<wbr>Entry</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="app.types.parententry.html#children" class="tsd-kind-icon">children</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="app.types.parententry.html#lastupdated" class="tsd-kind-icon">last<wbr>Updated</a>
-							</li>
-						</ul>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="app.types.shortcut.html" class="tsd-kind-icon">Shortcut</a>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="app.types.thoughtcontext.html" class="tsd-kind-icon">Thought<wbr>Context</a>
 					</li>
@@ -233,11 +271,26 @@
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/app.types.html#actioncreator" class="tsd-kind-icon">Action<wbr>Creator</a>
 					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/app.types.html#alert" class="tsd-kind-icon">Alert</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="../modules/app.types.html#connected" class="tsd-kind-icon">Connected</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/app.types.html#context" class="tsd-kind-icon">Context</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/app.types.html#direction" class="tsd-kind-icon">Direction</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../modules/app.types.html#directionmap" class="tsd-kind-icon">Direction<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/app.types.html#gesturepath" class="tsd-kind-icon">Gesture<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/app.types.html#patch" class="tsd-kind-icon">Patch</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/app.types.html#path" class="tsd-kind-icon">Path</a>
